@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="./style.css" />
+
+</head>
+
+<body>
+    <div style="width: 400px;margin: auto; margin-top: 25px;">
+        <form id="form-contact">
+            <div style=" margin-bottom:20px ;">
+                <label for="name" style="font-size: 20px; font-weight: 700;">Name</label>
+                <input id="name" type="text" required placeholder="input your name">
+            </div>
+
+            <div style="margin-bottom:20px ;">
+                <label for="email" style="font-size: 20px; font-weight: 700;">Email</label>
+                <input id="email" type="email" placeholder="enter your email">
+            </div>
+
+            <div style="margin-bottom:20px ;">
+                <label for="phone" style="font-size: 20px; font-weight: 700;">Phone Number</label>
+                <input id="phone" type="text" placeholder="enter your phone number">
+            </div>
+
+            <div style="margin-bottom:20px ;">
+                <label for="subject" style="font-size: 20px; font-weight: 700;">Subject</label>
+                <select id="subject">
+                    <option value="" disabled selected hidden> Select your option</option>
+                    <option>Lets Talk</option>
+                    <option>Lets Collaboration</option>
+                    <option>Lets Create Project</option>
+                </select>
+            </div>
+
+            <div style="margin-bottom:20px ;">
+                <label for="message" style="font-size: 20px; font-weight: 700;">Your Message</label>
+                <textarea id="message" cols="30" rows="10" placeholder="input your message"></textarea>
+            </div>
+
+            <button type="button" id="submit-btn" onclick="submitData()">Submit</button>
+        </form>
+    </div>
+</body>
+<script src="contact.js"></script>
+
+</html>
